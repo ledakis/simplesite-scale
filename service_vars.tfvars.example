@@ -1,0 +1,6 @@
+region             = "eu-west-1"
+app_repo_url       = "<ACCOUNT_NUMBER>.dkr.ecr.eu-west-1.amazonaws.com/my-simplesite"
+infra_state_bucket = "bucket-name"
+infra_state_key    = "service-name/infrakey.tfstate"
+app_state_bucket   = "bucket-name"
+app_state_key      = "service-name/servicekey.tfstate"

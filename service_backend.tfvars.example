@@ -1,0 +1,3 @@
+bucket = "bucket-name"
+key    = "service-name/servicekey.tfstate"
+region = "eu-west-1"

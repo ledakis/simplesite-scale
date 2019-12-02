@@ -1,0 +1,3 @@
+bucket = "bucket-name"
+key    = "service-name/infrakey.tfstate"
+region = "eu-west-1"

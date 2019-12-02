@@ -1,0 +1,5 @@
+cloudflare_api_token = "cloudflaretoken"
+aws_subdomain        = "aws"
+cloudflare_zone      = "example.com"
+endpoind_name        = "site.aws.example.com"
+service_name         = "my-simplesite"
