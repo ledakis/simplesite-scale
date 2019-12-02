@@ -1,9 +1,13 @@
 # Simple site in AWS with scaling
 
-Assumption 1: This is to immitate a service running on Docker containers (serving a simple static site for now). The point to be made is that one can modify the dockerfile contents and create a bigger application (not including state per current design).
-Assumption 2: Currently this was made in a personal AWS account. This means a few resources need to be created before the work even begins for the creation of the service infrastructure. There are two terraform directories one for the general infrastructure and one for the service itself.
-Assumption 3: This will run from a personal machine, with the potential to be changed to work in a pipeline. As a result, the AWS credentials this runs from should have permissions to create the following resources in the plan.
-Assumption 4: An S3 bucket for the states already exists.
+
+_Assumption 1: This is to immitate a service running on Docker containers (serving a simple static site for now). The point to be made is that one can modify the dockerfile contents and create a bigger application (not including state per current design)._
+
+_Assumption 2: This was made in a personal AWS account. This means a few resources need to be created before the work even begins for the creation of the service infrastructure. There are two terraform directories one for the general infrastructure and one for the service itself._
+
+_Assumption 3: This will run from a personal machine, with the potential to be changed to work in a pipeline. As a result, the AWS credentials this runs from should have permissions to create the following resources in the plan._
+
+_Assumption 4: An S3 bucket for the states already exists._
 
 Plan
 
@@ -50,7 +54,7 @@ Plan
 2. Fill the variable files in `service_backend.tfvars` and `service_vars.tfvars` based on the example files.
 3. Run `rm -rf .terraform && terraform init -backend-config=service_backend.tfvars terraform/service/`
 4. Run `terraform apply -var-file=service_vars.tfvars terraform/service/`
-5. Based on the variables given, the output should display the hostname.
+5. Based on the variables given, the output should display the url of the site.
 
 
 ## Destroy
